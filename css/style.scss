@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap");
+
+body {
+  background-color: rgba(245, 209, 193, 0.808);
+}
+
+.header-background {
+  background: url(/img/Header-Pizza-Foto.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+
+  font-size: 4.5em;
+  text-align: center;
+  padding: 1rem;
+  color: rgb(252, 252, 252);
+  background-color: rgba(63, 62, 61, 0.508);
+  border-radius: 15px;
+}
+
+table,
+th,
+td {
+  border: 2px solid rgba(0, 0, 0, 0.151);
+  border-collapse: collapse;
+  margin: 1em;
+  font-size: 1rem;
+}
+
+tabl,
+th {
+  background-color: rgb(248, 183, 44);
+}
+
+table,
+td {
+  background-color: rgba(248, 183, 44, 0.158);
+}
+
+button {
+  background-color: coral;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: green;
+  }
+}
+
+.nav-item a {
+  color: rgb(51, 51, 9);
+  font-family: "Amatic SC", cursive;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.active {
+  background-color: rgba(248, 183, 44, 0.158);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgb(248, 183, 44);
+  color: black;
+  padding: 8px;
+  margin-top: 10px;
+}

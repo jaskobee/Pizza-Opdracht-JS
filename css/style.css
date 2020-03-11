@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap");
+body {
+  background-color: rgba(245, 209, 193, 0.808);
+}
+
+.header-background {
+  background: url(/img/Header-Pizza-Foto.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 4.5em;
+  text-align: center;
+  padding: 1rem;
+  color: #fcfcfc;
+  background-color: rgba(63, 62, 61, 0.508);
+  border-radius: 15px;
+}
+
+table,
+th,
+td {
+  border: 2px solid rgba(0, 0, 0, 0.151);
+  border-collapse: collapse;
+  margin: 1em;
+  font-size: 1rem;
+}
+
+tabl,
+th {
+  background-color: #f8b72c;
+}
+
+table,
+td {
+  background-color: rgba(248, 183, 44, 0.158);
+}
+
+button {
+  background-color: coral;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: green;
+}
+
+.nav-item a {
+  color: #333309;
+  font-family: "Amatic SC", cursive;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.active {
+  background-color: rgba(248, 183, 44, 0.158);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #f8b72c;
+  color: black;
+  padding: 8px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */

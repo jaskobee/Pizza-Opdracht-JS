@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- My Own Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Jasko's Pizza Place</title>
+  </head>
+
+  <body>
+    <!--    Header     -----------------------------------------------------------------------------------------------------     Header      -->
+
+    <header>
+      <div class="header-background">
+        <h1>Jasko's Pizza Place</h1>
+      </div>
+    </header>
+
+    <!--    Pills Menu     -----------------------------------------------------------------------------------------------------     Pills Menu      -->
+
+    <ul
+      class="nav nav-pills mb-3 justify-content-center"
+      id="pills-tab"
+      role="tablist"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="pills-size-tab"
+          data-toggle="pill"
+          href="#pills-size"
+          role="tab"
+          aria-controls="pills-size"
+          aria-selected="true"
+          >Size</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="pills-cheese-tab"
+          data-toggle="pill"
+          href="#pills-cheese"
+          role="tab"
+          aria-controls="pills-cheese"
+          aria-selected="false"
+          >Cheese</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="pills-crust-tab"
+          data-toggle="pill"
+          href="#pills-crust"
+          role="tab"
+          aria-controls="pills-crust"
+          aria-selected="false"
+          >Crust Type</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="pills-sauce-tab"
+          data-toggle="pill"
+          href="#pills-sauce"
+          role="tab"
+          aria-controls="pills-sauce"
+          aria-selected="false"
+          >Sauce</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="pills-toppings-tab"
+          data-toggle="pill"
+          href="#pills-toppings"
+          role="tab"
+          aria-controls="pills-toppings"
+          aria-selected="false"
+          >Toppings</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="pills-vegetables-tab"
+          data-toggle="pill"
+          href="#pills-vegetables"
+          role="tab"
+          aria-controls="pills-vegetables"
+          aria-selected="false"
+          >Vegetables</a
+        >
+      </li>
+    </ul>
+    <!--    Tab Content     -----------------------------------------------------------------------------------------------------     Tab Content      -->
+
+    <div
+      class="tab-content d-flex justify-content-center"
+      id="pills-tabContent"
+    >
+      <!--    Size Content     -------------------------------------------------------     Size Content       -->
+
+      <div
+        class="tab-pane fade show active"
+        id="pills-size"
+        role="tabpanel"
+        aria-labelledby="pills-size-tab"
+      >
+        <form>
+          <input type="radio" name="size" id="kidsSize" value="05.00" />
+          <label for="kidsSize">Kids Size - &euro; 5,00</label> <br />
+
+          <input type="radio" name="size" id="smallSize" value="06.50" />
+          <label for="smallSize">Small Size - &euro; 6,50</label> <br />
+
+          <input type="radio" name="size" id="mediumSize" value="08.50" />
+          <label for="mediumSize">Medium Size - &euro; 8,50</label> <br />
+
+          <input type="radio" name="size" id="largeSize" value="10.00" />
+          <label for="largeSize">Large Size - &euro; 10,00</label> <br />
+
+          <input type="radio" name="size" id="familySize" value="14.50" />
+          <label for="familySize">Family Size - &euro; 14,50</label>
+        </form>
+      </div>
+      <!--    Cheese Content     ----------------------------------------------------     Cheese Content       -->
+
+      <div
+        class="tab-pane fade"
+        id="pills-cheese"
+        role="tabpanel"
+        aria-labelledby="pills-cheese-tab"
+      >
+        <form>
+          <input type="radio" name="cheese" id="noCheese" value="0,00" />
+          <label for="noCheese">No Cheese *</label> <br />
+
+          <input type="radio" name="cheese" id="normalCheese" value="2,00" />
+          <label for="normalCheese">Normal Cheese - &euro; 2,00</label> <br />
+
+          <input type="radio" name="cheese" id="extraCheese" value="4.00" />
+          <label for="extraCheese">Extra Cheese - &euro; 4,00</label> <br />
+        </form>
+      </div>
+      <!--   Crust Type Content     ----------------------------------------------------     Crust Type Content      -->
+
+      <div
+        class="tab-pane fade"
+        id="pills-crust"
+        role="tabpanel"
+        aria-labelledby="pills-crust-tab"
+      >
+        <form>
+          <input type="radio" name="crust" id="normalCrust" value="0,00" />
+          <label for="normalCrust">Normal Crust - &euro; 0,00</label> <br />
+
+          <input type="radio" name="crust" id="garlicCrust" value="0,00" />
+          <label for="garlicCrust">Garlic Crust - &euro; 0,00</label> <br />
+
+          <input type="radio" name="crust" id="cheesyCrust" value="3,00" />
+          <label for="cheesyCrust">Cheesy Crust - &euro; 3,00</label> <br />
+
+          <input type="radio" name="crust" id="spicyCrust" value="0,00" />
+          <label for="spicyCrust">Spicy Crust - &euro; 0,00</label> <br />
+
+          <input type="radio" name="crust" id="cheffCrust" value="0,00" />
+          <label for="cheffCrust">Crust A La Cheff - &euro; 0,00</label> <br />
+        </form>
+      </div>
+      <!--   Sauce Content    ----------------------------------------------------     Sauce Content     -->
+
+      <div
+        class="tab-pane fade"
+        id="pills-sauce"
+        role="tabpanel"
+        aria-labelledby="pills-crust-tab"
+      >
+        <form>
+          <input type="radio" name="sauce" id="noSauce" value="0,00" />
+          <label for="noSauce">No Sauce - &euro; 0,00</label> <br />
+
+          <input type="radio" name="sauce" id="bbqSauce" value="0,00" />
+          <label for="bbqSauce">Home Made BBQ Sauce - &euro; 0,00</label> <br />
+
+          <input type="radio" name="sauce" id="whiteSauce" value="3,00" />
+          <label for="whiteSauce">White Sauce - &euro; 0,00</label> <br />
+
+          <input type="radio" name="sauce" id="mariaraSauce" value="0,00" />
+          <label for="mariaraSauce">Mariara Sauce - &euro; 0,00</label> <br />
+        </form>
+      </div>
+      <!-- Toppings Content -------------------------------------------------------------------------- Toppings Content -->
+
+      <div
+        class="tab-pane fade"
+        id="pills-toppings"
+        role="tabpanel"
+        aria-labelledby="pills-crust-tab"
+      >
+        <form>
+          <input
+            type="checkbox"
+            name="toppings"
+            id="pepperoni"
+            value="pepperoni"
+          />
+          <label for="pepperoni">Pepperoni - &euro; 3,00</label> <br />
+          <input type="checkbox" name="toppings" id="sausage" value="sausage" />
+          <label for="sausage">Sausage - &euro; 3,50</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="canadianBacon"
+            value="canadianBacon"
+          />
+          <label for="canadianBacon">Canadian Bacon - &euro; 3,50</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="groundBeef"
+            value="groundBeef"
+          />
+          <label for="groundBeef">Ground Beef - &euro; 4,00</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="anchovis"
+            value="anchovis"
+          />
+          <label for="anchovis">Anchovis - &euro; 4,00</label> <br />
+          <input type="checkbox" name="toppings" id="chicken" value="chicken" />
+          <label for="chicken">Chicken - &euro; 4,00</label>
+        </form>
+      </div>
+      <!-- Vegetables Content -------------------------------------------------------------------------- Vegetables Content -->
+
+      <div
+        class="tab-pane fade"
+        id="pills-vegetables"
+        role="tabpanel"
+        aria-labelledby="pills-crust-tab"
+      >
+        <form>
+          <input
+            type="checkbox"
+            name="toppings"
+            id="verseTomaten"
+            value="verseTomaten"
+          />
+          <label for="verseTomaten">Fresh Tomatos - &euro; 0,50</label> <br />
+          <input type="checkbox" name="toppings" id="uien" value="uien" />
+          <label for="uien">Unions - &euro; 0,50</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="zwarteOlijven"
+            value="zwarteOlijven"
+          />
+          <label for="zwarteOlijven">Black Olives - &euro; 0,50</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="groenePepers"
+            value="groenePepers"
+          />
+          <label for="groenePepers">Green Peppers - &euro; 0,50</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="spinazie"
+            value="spinazie"
+          />
+          <label for="spinazie">Spinach - &euro; 0,50</label> <br />
+          <input
+            type="checkbox"
+            name="toppings"
+            id="jalapenos"
+            value="jalapenos"
+          />
+          <label for="jalapenos">Jalapeños - &euro; 1,00</label>
+        </form>
+      </div>
+    </div>
+
+    <!--    Submit Order Table     -----------------------------------------------------------------------------------------------------     Submit Order Table       -->
+
+    <div class="order-table d-flex justify-content-center">
+      <table>
+        <table style="width:50%">
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Pizza Size</td>
+            <td id="prijsSize"></td>
+          </tr>
+          <tr>
+            <td>Cheese <br /></td>
+            <td id="prijsCheese"></td>
+          </tr>
+          <tr>
+            <td>Crust Type <br /></td>
+            <td id="prijsCrust"></td>
+          </tr>
+          <tr>
+            <td>Sauce</td>
+            <td id="prijsSauce"></td>
+          </tr>
+          <tr>
+            <td>Toppings</td>
+            <td id="prijsToppings"></td>
+          </tr>
+          <tr>
+            <td>Vegetables</td>
+            <td id="prijsVegetables"></td>
+          </tr>
+          <tr>
+            <td>Total Price</td>
+
+            <td id="teBetalen"></td>
+          </tr>
+        </table>
+      </table>
+    </div>
+
+    <!---- Button Here     ------- ----------- --------------------->
+
+    <div class="d-flex justify-content-center">
+      <button onclick="betalen()">Submit Order</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
